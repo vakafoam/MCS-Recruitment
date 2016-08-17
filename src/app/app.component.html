@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+      <div id="logo-bg">
+        <div id="logo"></div>
+      </div>
+      <ul class="nav nav-sidebar">
+        <li><a routerLink="/overview" [routerLinkActive]="['active']">Overview</a></li>
+        <li><a routerLink="/weather-information" [routerLinkActive]="['active']">Weather information</a></li>
+        <li><a routerLink="/sat-map" [routerLinkActive]="['active']">Satellite map</a></li>
+        <li><a routerLink="/debug" [routerLinkActive]="['active']">Debug</a></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><a routerLink="/options" [routerLinkActive]="['active']">Option</a></li>
+        <li><a routerLink="/logout" [routerLinkActive]="['active']">Log out</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
